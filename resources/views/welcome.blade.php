@@ -76,17 +76,30 @@
                 </div>
 
                 <div class="links">
-            
+                    <table>
+                        
+                        <tr>
+                        <tr>File</tr>
+                        <tr>File size</tr>
+                        <tr>Download url</tr>
+                        <tr>Mime Type</tr>
+                        </tr>
                     @if (count($images))
                                 {{-- */$i=0;/* --}}
                                 {{-- */$class='';/* --}}
                                 @foreach($images as $image)
+                                <tr>
+                                    <td><img src="<?php echo asset("/storage/app/$image->file")?>" width="60" height="60"></img></td>
+                                    <td>{{ $image->file_size }}</td>
+                                    <td>{{ $image->download_url }}</td>
+                                    <td>{{ $image->mimetype }}</td>
+                                </tr>
                                 
                                 
-                                <img src="<?php echo asset("/storage/app/$image->file")?>" width="60" height="60"></img>
                                 @endforeach
                                 
     @endif   
+    </table>
                 </div>
             </div>
         </div>
