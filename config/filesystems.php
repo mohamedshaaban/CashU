@@ -68,6 +68,9 @@ return [
             'clientSecret' => env('GOOGLE_DRIVE_CLIENT_SECRET'),
             'refreshToken' => env('GOOGLE_DRIVE_REFRESH_TOKEN'),
             'folderId' => env('GOOGLE_DRIVE_FOLDER_ID'),
+            'redirecturl' => env('GOOGLE_REDIRECT_URI'),
+            'hostingurl' => env('GOOGLE_HOSTING_URI'),
+
         ],
 
     ],

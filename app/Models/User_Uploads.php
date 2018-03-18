@@ -21,7 +21,8 @@ class User_Uploads extends Model
         'type',
         'file_size',
         'download_url',
-        'mimetype'
+        'mimetype',
+        'user_email'
     ];
 
 }

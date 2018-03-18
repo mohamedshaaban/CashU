@@ -9,7 +9,7 @@
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "nao-pon/flysystem-google-drive": "~1.1",
-        "laravelcollective/html": "5.2.*"
+        "google/apiclient": "2.0.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -11,10 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-Route::get('list/all', 'Controller@list_all')->name('profile');
-Route::get('list', 'Controller@listimgs')->name('list');
+//Download all images from Google Drive to the local
+Route::get('/download', 'Controller@download')->name('download');
+//List all images in DB and directory as grid wiew
+Route::get('/', 'Controller@listimgs')->name('list');
+Route::get('glogin',array('as'=>'glogin','uses'=>'UserController@googleLogin')) ;
+Route::get('google-user',array('as'=>'user.glist','uses'=>'UserController@listGoogleUser')) ;

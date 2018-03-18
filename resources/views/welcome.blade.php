@@ -1,7 +1,4 @@
 <!doctype html>
-                             
-
-
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -33,7 +30,7 @@
                 display: flex;
                 justify-content: center;
             }
-
+            a.google {background: #c32f10;    color: #fff;}
             .position-ref {
                 position: relative;
             }
@@ -74,8 +71,10 @@
                 <div class="title m-b-md">
             
                 </div>
+                <div style="clear:both; height: 100px;"> </div>
 
-                <div class="links">
+                <a class="google btn" href="{{ url('glogin') }}"> Download images from google drive  </a>
+                <div class="links" style="height: 839px;overflow-y: auto;">
                     <table>
                         
                         <tr>
@@ -83,6 +82,7 @@
                         <tr>File size</tr>
                         <tr>Download url</tr>
                         <tr>Mime Type</tr>
+                        <tr>User</tr>
                         </tr>
                     @if (count($images))
                                 {{-- */$i=0;/* --}}
@@ -93,6 +93,7 @@
                                     <td>{{ $image->file_size }}</td>
                                     <td>{{ $image->download_url }}</td>
                                     <td>{{ $image->mimetype }}</td>
+                                    <td>{{ $image->user_email }}</td>
                                 </tr>
                                 
                                 

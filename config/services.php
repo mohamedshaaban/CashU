@@ -34,5 +34,12 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'google' => [
+        'app_name' => 'OneAll-Site-511543-2',
+        'client_id' => '34846673084-6ge97kbth505i74mcko6vbg0j5jh5rsr.apps.googleusercontent.com',
+        'client_secret' => 'YrTEk9Ejyg792lIdkNI_vnsC',
+        'api_key' => 'AIzaSyAaEm8KYaLdVnEKqSPLbWUHHx5gvBmVLaA'
+    ],
+
 
 ];
