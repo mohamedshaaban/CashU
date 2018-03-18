@@ -73,7 +73,9 @@
                 </div>
                 <div style="clear:both; height: 100px;"> </div>
 
-                <a class="google btn" href="{{ url('glogin') }}"> Download images from google drive  </a>
+                <a class="google btn" href="{{ url('glogin') }}"> Click here to Download images from google drive  </a>
+                <br />
+                <br />
                 <div class="links" style="height: 839px;overflow-y: auto;">
                     <table>
                         
